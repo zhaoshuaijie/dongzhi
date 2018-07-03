@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/paike_ptrframelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close_either="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+        <FrameLayout
+            xmlns:fab="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/f4_frame">
+
+            <ListView
+                android:id="@+id/lv_paike"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@android:color/transparent"
+                android:headerDividersEnabled="false"
+                android:divider="@color/color_xian"
+                android:dividerHeight="0.5dp"/>
+
+            <com.melnykov.fab.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_margin="24dp"
+                android:src="@mipmap/ic_add_white_24dp"
+                fab:fab_type="mini"
+                fab:fab_colorNormal="@color/redis"
+                fab:fab_colorPressed="@color/hui"
+                fab:fab_colorRipple="@color/red"/>
+        </FrameLayout>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

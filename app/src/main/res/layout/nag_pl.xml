@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_xian" />
+    <LinearLayout
+        android:id="@+id/ll_ed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="5dp"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/ed_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/img_pl1"
+            android:hint="评一下"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:editable="false"/>
+        <ImageView
+            android:id="@+id/iv_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_pl2"/>
+        <TextView
+            android:id="@+id/tv_plorzw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正文"
+            android:textSize="13sp"
+            android:layout_marginLeft="3dp"/>
+        <ImageView
+            android:id="@+id/iv_fx"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:src="@drawable/img_pl4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"/>
+    </LinearLayout>
+</LinearLayout>

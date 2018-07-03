@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lcsd.dongzhi.activity.UserInfoActivity">
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/topcolor" />
+    <include layout="@layout/toptitle_bar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_civhead_u"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="头像"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <com.lcsd.dongzhi.view.CircleImageView
+            android:id="@+id/civ_head_u"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_nickname_u"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="昵称"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_nickname_u"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="  "
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/rl_sex_u"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:layout_marginTop="10dp"
+         android:background="@color/white"
+         android:paddingLeft="15dp"
+         android:paddingRight="10dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:gravity="center"
+             android:text="性别"
+             android:textColor="@color/black"
+             android:textSize="15sp" />
+
+         <TextView
+             android:id="@+id/tv_sex_u"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_alignParentRight="true"
+             android:gravity="center"
+             android:text="  "
+             android:textSize="15sp" />
+
+
+     </RelativeLayout>
+</LinearLayout>

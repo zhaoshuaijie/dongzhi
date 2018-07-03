@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.lcsd.dongzhi.view.MultipleStatusView
+        android:id="@+id/multiple_status_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyView="@layout/empty_view"
+        app:errorView="@layout/error_view"
+        app:loadingView="@layout/loading_view"
+        app:noNetworkView="@layout/no_network_view">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.dl7.player.media.IjkPlayerView
+                    android:id="@+id/f2_player_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp" />
+
+                <FrameLayout
+                    android:id="@+id/fl_gb"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:visibility="gone">
+
+                    <VideoView
+                        android:id="@+id/gb_video"
+                        android:layout_width="wrap_content"
+                        android:layout_height="230dp"
+                        android:layout_gravity="center" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:background="@drawable/img_guangbo_thume"
+                        android:scaleType="centerCrop" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_zhibo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="频道频率"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+
+                <Button
+                    android:id="@+id/bt_gg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="广告宣传"
+                    android:textColor="@color/huise2"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/view_zhibo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/red" />
+
+                <View
+                    android:id="@+id/view_gg"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent" />
+            </LinearLayout>
+
+            <GridView
+                android:id="@+id/gv_zhibo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/topcolor"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2" />
+
+            <ImageView
+                android:id="@+id/f2_iv_gg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.lcsd.dongzhi.view.MultipleStatusView>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fl_video_box"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.dl7.player.media.IjkVideoView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/iv_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@android:color/black" />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/sv_danmaku"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/pb_loading"
+        android:layout_width="35dp"
+        android:layout_height="13dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:indeterminateDrawable="@drawable/loading"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/layout_touch_gestures"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <include layout="@layout/layout_top_bar" />
+
+    <include layout="@layout/layout_bottom_bar" />
+
+    <ImageView
+        android:id="@+id/iv_player_lock"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@drawable/sel_player_lock"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_player_phont"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:src="@mipmap/img_player_phont"
+        android:visibility="gone"/>
+
+    <include layout="@layout/layout_skip_tip" />
+
+    <ImageView
+        android:id="@+id/iv_play_circle"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_player_center_start" />
+
+    <FrameLayout
+        android:id="@+id/fl_reload_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@mipmap/ic_reload"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="点击重试"
+            android:textColor="#FF7000"
+            android:textSize="16sp" />
+    </FrameLayout>
+
+    <include layout="@layout/layout_media_quality" />
+
+    <include layout="@layout/layout_send_danmaku" />
+
+</FrameLayout>

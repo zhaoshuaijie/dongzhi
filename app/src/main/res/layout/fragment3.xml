@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:ignore="NamespaceTypo">
+
+    <in.srain.cube.views.ptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/f3_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close_either="1000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <com.lcsd.dongzhi.view.MultipleStatusView
+            android:id="@+id/multiple_status_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:emptyView="@layout/empty_view"
+            app:errorView="@layout/error_view"
+            app:loadingView="@layout/loading_view"
+            app:noNetworkView="@layout/no_network_view">
+
+            <ScrollView
+                android:id="@+id/f3_sc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/f3_ll1"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/red" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="东至广电"
+                            android:textColor="@color/huise2"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <com.lcsd.dongzhi.view.MyGridView
+                        android:id="@+id/f3_gv1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="4"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:id="@+id/f3_v2"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/hui"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/f3_ll2"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/red"></View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="走进东至"
+                            android:textColor="@color/huise2"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <com.lcsd.dongzhi.view.MyGridView
+                        android:id="@+id/f3_gv2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="4"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:id="@+id/f3_v3"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/hui"
+                        android:visibility="invisible" />
+
+                    <LinearLayout
+                        android:id="@+id/f3_ll3"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/red"></View>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="办事指南"
+                            android:textColor="@color/huise2"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <com.lcsd.dongzhi.view.MyGridView
+                        android:id="@+id/f3_gv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="4"
+                        android:scrollbars="none" />
+
+                    <View
+                        android:id="@+id/f3_v4"
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@color/hui" />
+
+                    <LinearLayout
+                        android:id="@+id/f3_ll4"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="4dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:background="@color/red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="15dp"
+                            android:text="休闲娱乐"
+                            android:textColor="@color/huise2"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <com.lcsd.dongzhi.view.MyGridView
+                        android:id="@+id/f3_gv4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:numColumns="4" />
+                </LinearLayout>
+            </ScrollView>
+        </com.lcsd.dongzhi.view.MultipleStatusView>
+    </in.srain.cube.views.ptr.PtrClassicFrameLayout>
+</LinearLayout>

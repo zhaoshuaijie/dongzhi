@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CameraRecord/CameraRecord.iml" filepath="$PROJECT_DIR$/CameraRecord/CameraRecord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dongzhi.iml" filepath="$PROJECT_DIR$/dongzhi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myokhttp/myokhttp.iml" filepath="$PROJECT_DIR$/myokhttp/myokhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ninegridview/ninegridview.iml" filepath="$PROJECT_DIR$/ninegridview/ninegridview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/playerview/playerview.iml" filepath="$PROJECT_DIR$/playerview/playerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ptr-lib/ptr-lib.iml" filepath="$PROJECT_DIR$/ptr-lib/ptr-lib.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lcsd.dongzhi">
+
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 拍摄视频权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 修改WiFi状态. 发起WiFi扫描, 需要WiFi信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 调用手机拍照所需权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".http.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/img_logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/donghziTheme">
+        <activity android:name=".activity.WelcomActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsDetialActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.ImagePageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.DianboListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PlayVideoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.HYActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CalendarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZhuCe1Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ZhuCe2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MessageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Message2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ModifyPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PaikeUploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CirclevideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.PaikeImagePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <!-- 拍摄小视频 -->
+        <activity
+            android:name=".activity.CameraActivity"
+            android:screenOrientation="portrait" />
+        <!-- 拍摄小视频结束 -->
+        <activity
+            android:name=".activity.UploadvideoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.PaikeLocationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".activity.FuwuListActivity"
+            android:screenOrientation="portrait" />
+        <!-- qq分享 -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1106133179" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.NewsTopActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebViewActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WXJXActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.WepiaoActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:hardwareAccelerated="true"/>
+        <activity android:name=".activity.JokesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.LsContnetActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 结束 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="59378527c62dca1b35001ba0" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="yingyongbao" />
+        <meta-data
+            android:name="TencentMapSDK"
+            android:value="6JPBZ-UCYKO-K7CWV-SJR2O-RWI4S-NFBOC" />
+        <!-- 全面屏 -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.1" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.lcsd.dongzhi.MyFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+    </application>
+
+</manifest>
